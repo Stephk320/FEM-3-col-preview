@@ -1,0 +1,166 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: hsl(0, 0%, 95%);
+    
+}
+
+.main-card {
+    margin: 9%;
+}
+
+.card-option {
+    padding: 40px 0 17px 45px;
+}
+
+h2 {
+    margin: 25px 0 10px 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+.veh-info {
+    padding: 15px 30px 10px 0;
+    line-height: 1.7;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+
+}
+
+.vehicle-sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.btn-sedan {
+    color:hsl(31, 77%, 52%);
+}
+
+.vehicle-suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.btn-suvs {
+    color:hsl(184, 100%, 22%);
+}
+
+.vehicle-luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.btn-luxury {
+    color:hsl(179, 100%, 13%);
+}
+
+.learn-more {
+    background-color:hsl(0, 0%, 95%);
+    border: .5px solid hsl(0, 0%, 95%);
+    border-radius: 20px;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size:small;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+@media (hover: hover) {
+    .learn-more:hover {
+        background-color: transparent;
+        color:hsl(0, 0%, 95%);
+        border-color:;
+        border: 1px solid hsl(0, 0%, 95%);
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-card {
+        display: flex;
+        flex-direction: row;
+        max-width: 900px; 
+         
+    }
+
+    .veh-info {
+        margin-bottom: 45px;
+        margin-right: 25px;
+    }
+
+    .learn-more {
+        align-items: stretch;
+    }
+
+    .vehicle-luxury {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .vehicle-sedan {
+        border-top-right-radius: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
